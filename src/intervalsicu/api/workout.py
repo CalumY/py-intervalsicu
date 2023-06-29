@@ -33,7 +33,12 @@ class WorkoutDoc(dict):
         'steps',
         'duration',
         'zoneTimes',
-        'hrZoneTimes']
+        'variability_index',
+        'average_watts',
+        'options',
+        'normalized_power',
+        'locales',
+        'distance']
 
     def __init__(self, **kwargs):
         IntervalsObject.validate(set(WorkoutDoc.fields), set(kwargs.keys()))
